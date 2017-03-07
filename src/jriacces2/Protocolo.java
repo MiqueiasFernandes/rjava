@@ -57,6 +57,7 @@ public class Protocolo {
 
     public void fechar() {
         log.printLog(LogType.LOG_DEBUG, "encerrando protocolo. {Protocolo.java/59}");
+        rJava.getRengine().end();
     }
 
     public ILog getLog() {

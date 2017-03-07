@@ -26,7 +26,10 @@ public class JRIacces2 {
      */
     public static void main(String[] args) {
 
-        args = new String[]{"LIVE", "", "INFO", "--vanilla"};
+        //test proposits
+        if (args == null) {
+            args = new String[]{"LIVE", "", "INFO", "--vanilla"};
+        }
 
         if (args.length < 1 || args[0] == null || args[0].isEmpty()) {
             System.out.println("USAGE: [LIVE/BATCH]");
@@ -34,9 +37,10 @@ public class JRIacces2 {
         }
 
         ILog log = null;
+
         try {
-            log = new TXTLog(args[1], getLogType(args[2]));
-            log.printLog(LogType.LOG_DEBUG, "Arquivo Log inicializado com sucesso. {JRIaccess2.java/40}");
+            log = new TXTLog(args[1], LogType.getLogType(args[2]));
+            log.printLog(LogType.LOG_DEBUG, "Arquivo Log inicializado com sucesso. {JRIaccess2.java/42}");
             log.printLog(LogType.LOG_INFO, "[ ARGS ]" + Arrays.toString(args));
         } catch (IOException ex) {
             System.err.println("erro ao inicializar arquivo de log: " + ex);
@@ -44,33 +48,26 @@ public class JRIacces2 {
         }
 
         String modo = args[0];
-        if (true || "LIVE".equals(modo)) {
-            log.printLog(LogType.LOG_DEBUG, "Inicializando protocolo. {JRIaccess2.java/48}");
-            Protocolo protocolo = new Protocolo(Arrays.copyOfRange(args, 3, args.length), log);
-            log.printLog(LogType.LOG_DEBUG, "Protocolo inicializado com sucesso. {JRIaccess2.java/50}");
-        } else if ("BATCH".equals(modo)) {
-            log.printLog(LogType.LOG_DEBUG, ". {JRIaccess2.java/52}");
-        } else {
-            log.printLog(LogType.LOG_DEBUG, "Arquivo Log inicializado com sucesso. {JRIaccess2.java/54}");
+
+        if (null == modo) {
             System.out.println("USAGE: [LIVE/BATCH]");
             System.exit(Errors.ARGS_INVALIDO.ordinal());
+        } else {
+            switch (modo) {
+                case "LIVE":
+                    log.printLog(LogType.LOG_DEBUG, "Inicializando protocolo. {JRIaccess2.java/55}");
+                    Protocolo protocolo = new Protocolo(Arrays.copyOfRange(args, 3, args.length), log);
+                    log.printLog(LogType.LOG_DEBUG, "Protocolo inicializado com sucesso. {JRIaccess2.java/57}");
+                    break;
+                case "BATCH":
+                    log.printLog(LogType.LOG_DEBUG, "inicializando em modo BATCH. {JRIaccess2.java/60}");
+                    break;
+                default:
+                    log.printLog(LogType.LOG_DEBUG, "Arquivo Log inicializado com sucesso. {JRIaccess2.java/63}");
+                    System.out.println("USAGE: [LIVE/BATCH]");
+                    System.exit(Errors.ARGS_INVALIDO.ordinal());
+            }
         }
-    }
-
-    public static LogType getLogType(String tipo) {
-        if ("DEBUG".equals(tipo)) {
-            return LogType.LOG_DEBUG;
-        }
-        if ("INFO".equals(tipo)) {
-            return LogType.LOG_INFO;
-        }
-        if ("WARNING".equals(tipo)) {
-            return LogType.LOG_WARNING;
-        }
-        if ("ERROR".equals(tipo)) {
-            return LogType.LOG_ERROR;
-        }
-        return null;
     }
 
 }

@@ -17,12 +17,10 @@ import javax.xml.bind.annotation.XmlElement;
  * @author mfernandes
  */
 public class Batch {
-        static String diretorio = "/home/mfernandes/testR/";
+    
+   static String diretorio = "/home/mfernandes/testR/";
 
-    @XmlElement
-    public String token;
-    @XmlElement
-    public String script;
+
 
     private final Process process;
     StringBuilder res;

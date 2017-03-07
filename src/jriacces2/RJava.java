@@ -20,6 +20,7 @@ public class RJava {
     private final TextConsole console;
     private final ILog log;
     private final int timeout_iteration = 10;
+    private Rengine re;
 
     public RJava(TextConsole console, ILog log) {
         this.console = console;
@@ -37,7 +38,7 @@ public class RJava {
         // 2) we won't use the main loop at first, we'll start it later
         //    (that's the "false" as second argument)
         // 3) the callbacks are implemented by the TextConsole class above
-        Rengine re = new Rengine(args, false, console);
+        re = new Rengine(args, false, console);
         logInfo("Rengine created, waiting for R");
         // the engine creates R is a new thread, so we should wait until it's ready
         if (!re.waitForR()) {
@@ -89,6 +90,10 @@ public class RJava {
     public void log(LogType tipo, String texto) {
         log.printLog(LogType.LOG_DEBUG, "imprimindo log. {RJava.java/90}");
         log.printLog(tipo, "[ RJAVA ] " + texto);
+    }
+
+    public Rengine getRengine() {
+        return re;
     }
 
 }
