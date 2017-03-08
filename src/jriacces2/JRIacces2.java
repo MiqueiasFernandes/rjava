@@ -5,11 +5,9 @@
  */
 package jriacces2;
 
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.Scanner;
 import jriacces2.log.Errors;
 import jriacces2.log.ILog;
 import jriacces2.log.LogType;
@@ -27,12 +25,13 @@ public class JRIacces2 {
     public static void main(String[] args) {
 
         //test proposits
-        if (args == null) {
-            args = new String[]{"LIVE", "", "INFO", "--vanilla"};
+        if (args == null || args.length < 1) {
+            // args = new String[]{"LIVE", "", "INFO", "--vanilla"};
+            args = new String[]{"BATCH", "log.txt", "DEBUG", "script.R", "/home/mfernandes/jritest/"};
         }
 
         if (args.length < 1 || args[0] == null || args[0].isEmpty()) {
-            System.out.println("USAGE: [LIVE/BATCH]");
+            System.out.println("USAGE: [LIVE/BATCH] [ LOG FILE NAME ] [ LOG NIVEL ] [ OPTIONS ]");
             System.exit(Errors.ARGS_INVALIDO.ordinal());
         }
 
@@ -69,21 +68,98 @@ public class JRIacces2 {
         String modo = args[0];
 
         if (null == modo) {
-            System.out.println("USAGE: [LIVE/BATCH]");
+            System.out.println("USAGE: [LIVE/BATCH] [ LOG FILE NAME ] [ LOG NIVEL ] [ OPTIONS ]");
             System.exit(Errors.ARGS_INVALIDO.ordinal());
         } else {
+            boolean end = false;
             switch (modo) {
                 case "LIVE":
                     log.printLog(LogType.LOG_DEBUG, "Inicializando protocolo. {JRIaccess2.java/77}");
-                    Protocolo protocolo = new Protocolo(Arrays.copyOfRange(args, 3, args.length), log);
+                    if (args.length > 3) {
+                        Protocolo protocolo = new Protocolo(Arrays.copyOfRange(args, 3, args.length), log);
+                    } else {
+                        System.out.println("USAGE: [ LIVE ] [ LOG FILE NAME ] [ LOG NIVEL ] [ JRI ARGS ] ... ");
+                        System.exit(Errors.ARGS_INSUFICIENTE.ordinal());
+                    }
                     log.printLog(LogType.LOG_DEBUG, "Protocolo inicializado com sucesso. {JRIaccess2.java/79}");
                     break;
                 case "BATCH":
                     log.printLog(LogType.LOG_DEBUG, "inicializando em modo BATCH. {JRIaccess2.java/60}");
+                    if (args.length == 5) {
+                        Batch batch = new Batch(log, args[3], args[4]);
+                        log.printLog(LogType.LOG_DEBUG, "starting process. {JRIaccess2.java/88}");
+                        batch.startProcess();
+                        Scanner scanner = new Scanner(System.in);
+                        while (scanner.hasNextLine()) {
+                            String retorno = null, cmd;
+                            switch (cmd = scanner.nextLine()) {
+                                case "status":
+                                    retorno = batch.getStatus();
+                                    log.printLog(LogType.LOG_INFO, "status requisitado, retorno:"
+                                            + retorno + " {JRIaccess2.java/88}");
+                                    break;
+                                case "stop":
+                                    if (batch.stopProcess()) {
+                                        retorno = ("sucesso");
+                                    } else {
+                                        retorno = ("falhou");
+                                    }
+                                    log.printLog(LogType.LOG_INFO, "stop requisitado: " + retorno + " {JRIaccess2.java/88}");
+                                    break;
+                                case "result":
+                                    retorno = batch.getResult();
+                                    log.printLog(LogType.LOG_INFO, "result requisitado.");
+                                    break;
+                                case "exit":
+                                    batch.stopProcess();
+                                    batch.stopProcess();
+                                    log.printLog(LogType.LOG_INFO, "o processo sera encerrado.");
+                                    retorno = "bye.";
+                                    end = true;
+                                    break;
+                                default:
+
+                                    try {
+                                        if (cmd.startsWith("output")) {
+                                            String opt = cmd.substring(6);
+                                            String numero = ((opt != null)
+                                                    && (!opt.isEmpty()) && (opt.length() > 0)) ? opt : "0";
+                                            int num = Integer.parseInt(numero);
+                                            log.printLog(LogType.LOG_DEBUG, "outputs requisitado com opçao: " + num + " com: " + cmd);
+                                            retorno = batch.getOutput(num);
+                                            log.printLog(LogType.LOG_INFO, "output requisitado.");
+                                            break;
+                                        } else if (cmd.startsWith("error")) {
+                                            String opt = cmd.substring(5);
+                                            String numero = ((opt != null)
+                                                    && (!opt.isEmpty()) && (opt.length() > 0)) ? opt : "0";
+                                            int num = Integer.parseInt(numero);
+                                            log.printLog(LogType.LOG_DEBUG, "erros requisitado com opçao: " + num + " com: " + cmd);
+                                            retorno = batch.getErrorOutput(num);
+                                            log.printLog(LogType.LOG_INFO, "erros requisitado.");
+                                            break;
+                                        }
+                                    } catch (Exception ex) {
+                                        log.printLog(LogType.LOG_ERROR, "impossivel entender comando: " + cmd);
+                                    }
+
+                                    log.printLog(LogType.LOG_WARNING, "requição não definida. {JRIaccess2.java/88}");
+                                    retorno = ("OPTIONS: status, stop, result, exit, output, error");
+                                    break;
+                            }
+                            System.out.println(retorno);
+                            if (end) {
+                                System.exit(0);
+                            }
+                        }
+                    } else {
+                        System.out.println("USAGE: [ BATCH ] [ LOG FILE NAME ] [ LOG NIVEL ] [ FILE .R ] [ DIRETORIO ]");
+                        System.exit(Errors.ARGS_INSUFICIENTE.ordinal());
+                    }
                     break;
                 default:
                     log.printLog(LogType.LOG_DEBUG, "Arquivo Log inicializado com sucesso. {JRIaccess2.java/85}");
-                    System.out.println("USAGE: [LIVE/BATCH]");
+                    System.out.println("USAGE: [LIVE/BATCH] [ LOG FILE NAME ] [ LOG NIVEL ] [ OPTIONS ]");
                     System.exit(Errors.ARGS_INVALIDO.ordinal());
             }
         }

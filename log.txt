@@ -1,0 +1,137 @@
+DEBUG [07 de Março de 2017 - 22:32:00] Arquivo Log inicializado com sucesso. {JRIaccess2.java/62}
+INFO [07 de Março de 2017 - 22:32:00] [ ARGS ][BATCH, log.txt, DEBUG, script.R, /home/mfernandes/jritest/]
+DEBUG [07 de Março de 2017 - 22:32:00] inicializando em modo BATCH. {JRIaccess2.java/60}
+INFO [07 de Março de 2017 - 22:32:00] [ BATCH ] nome do arquivo de script: script.R
+INFO [07 de Março de 2017 - 22:32:00] [ BATCH ] diretorio para o script: /home/mfernandes/jritest/
+DEBUG [07 de Março de 2017 - 22:32:00] starting process. {JRIaccess2.java/88}
+INFO [07 de Março de 2017 - 22:32:00] [ BATCH ] processo iniciado com o comando: [R, CMD, BATCH, script.R]
+DEBUG [07 de Março de 2017 - 22:32:04] [ BATCH ] arquivo temporario: /tmp/status9075399940961896117.tmp
+INFO [07 de Março de 2017 - 22:32:04] [ BATCH ] obtendo status: ps -p 22100 -o %cpu,%mem,stat,time --no-headers
+DEBUG [07 de Março de 2017 - 22:32:04] [ BATCH ] aguardando por termino de processo de status.
+DEBUG [07 de Março de 2017 - 22:32:04] [ BATCH ] obtendo resultado da consulta do status.
+INFO [07 de Março de 2017 - 22:32:04] [ BATCH ] status obtido:
+[108, 0.6, R+, 00:00:04]
+fim do status obtido
+INFO [07 de Março de 2017 - 22:32:04] status requisitado, retorno:{"isAlive":true"cpu":"108","memoria":"0.6","estado":"R+","tempo":"00:00:04"} {JRIaccess2.java/88}
+DEBUG [07 de Março de 2017 - 22:32:56] [ BATCH ] arquivo temporario: /tmp/status679201245926400961.tmp
+INFO [07 de Março de 2017 - 22:32:56] [ BATCH ] obtendo status: ps -p 22100 -o %cpu,%mem,stat,time --no-headers
+DEBUG [07 de Março de 2017 - 22:32:56] [ BATCH ] aguardando por termino de processo de status.
+DEBUG [07 de Março de 2017 - 22:32:56] [ BATCH ] obtendo resultado da consulta do status.
+INFO [07 de Março de 2017 - 22:32:56] [ BATCH ] status obtido:
+[99.2, 0.7, R+, 00:00:55]
+fim do status obtido
+INFO [07 de Março de 2017 - 22:32:56] status requisitado, retorno:{"isAlive":true"cpu":"99.2","memoria":"0.7","estado":"R+","tempo":"00:00:55"} {JRIaccess2.java/88}
+DEBUG [07 de Março de 2017 - 22:33:25] [ BATCH ] arquivo temporario: /tmp/status490047957629414027.tmp
+INFO [07 de Março de 2017 - 22:33:25] [ BATCH ] obtendo status: ps -p 22100 -o %cpu,%mem,stat,time --no-headers
+DEBUG [07 de Março de 2017 - 22:33:25] [ BATCH ] aguardando por termino de processo de status.
+DEBUG [07 de Março de 2017 - 22:33:25] [ BATCH ] obtendo resultado da consulta do status.
+INFO [07 de Março de 2017 - 22:33:25] [ BATCH ] status obtido:
+[99.1, 0.7, R+, 00:01:24]
+fim do status obtido
+INFO [07 de Março de 2017 - 22:33:25] status requisitado, retorno:{"isAlive":true"cpu":"99.1","memoria":"0.7","estado":"R+","tempo":"00:01:24"} {JRIaccess2.java/88}
+INFO [07 de Março de 2017 - 22:33:43] [ BATCH ] processo terminado sob comando do usuario com sucesso.
+INFO [07 de Março de 2017 - 22:33:43] stop requisitado: sucesso {JRIaccess2.java/88}
+INFO [07 de Março de 2017 - 22:33:53] [ BATCH ] obtido status: processo morto.
+INFO [07 de Março de 2017 - 22:33:53] status requisitado, retorno:{"isAlive":false,"exitValue":143} {JRIaccess2.java/88}
+INFO [07 de Março de 2017 - 22:34:32] result requisitado, o programa pode ser encerrado.
+DEBUG [07 de Março de 2017 - 22:49:49] Arquivo Log inicializado com sucesso. {JRIaccess2.java/62}
+INFO [07 de Março de 2017 - 22:49:49] [ ARGS ][BATCH, log.txt, DEBUG, script.R, /home/mfernandes/jritest/]
+DEBUG [07 de Março de 2017 - 22:49:49] inicializando em modo BATCH. {JRIaccess2.java/60}
+INFO [07 de Março de 2017 - 22:49:49] [ BATCH ] nome do arquivo de script: script.R
+INFO [07 de Março de 2017 - 22:49:49] [ BATCH ] diretorio para o script: /home/mfernandes/jritest/
+DEBUG [07 de Março de 2017 - 22:49:49] starting process. {JRIaccess2.java/88}
+INFO [07 de Março de 2017 - 22:49:49] [ BATCH ] processo iniciado com o comando: [R, CMD, BATCH, script.R]
+DEBUG [07 de Março de 2017 - 22:49:53] [ BATCH ] arquivo temporario: /tmp/status4119121181780181701.tmp
+INFO [07 de Março de 2017 - 22:49:53] [ BATCH ] obtendo status: ps -p 22404 -o %cpu,%mem,stat,time --no-headers
+DEBUG [07 de Março de 2017 - 22:49:53] [ BATCH ] aguardando por termino de processo de status.
+DEBUG [07 de Março de 2017 - 22:49:53] [ BATCH ] obtendo resultado da consulta do status.
+INFO [07 de Março de 2017 - 22:49:53] [ BATCH ] status obtido:
+[111, 0.6, R+, 00:00:03]
+fim do status obtido
+INFO [07 de Março de 2017 - 22:49:53] status requisitado, retorno:{"isAlive":true,"pid":22404"cpu":"111","memoria":"0.6","estado":"R+","tempo":"00:00:03"} {JRIaccess2.java/88}
+DEBUG [07 de Março de 2017 - 22:49:58] outputs requisitado com opçao: 0 com: output
+INFO [07 de Março de 2017 - 22:49:58] output requisitado.
+DEBUG [07 de Março de 2017 - 22:50:00] erros requisitado com opçao: 0 com: error
+INFO [07 de Março de 2017 - 22:50:00] erros requisitado.
+INFO [07 de Março de 2017 - 22:50:15] [ BATCH ] processo terminado sob comando do usuario com sucesso.
+INFO [07 de Março de 2017 - 22:50:15] stop requisitado: sucesso {JRIaccess2.java/88}
+WARNING [07 de Março de 2017 - 22:50:24] [ BATCH ] impossivel abortar processo terminado.
+INFO [07 de Março de 2017 - 22:50:24] stop requisitado: falhou {JRIaccess2.java/88}
+WARNING [07 de Março de 2017 - 22:50:33] [ BATCH ] impossivel abortar processo terminado.
+INFO [07 de Março de 2017 - 22:50:33] stop requisitado: falhou {JRIaccess2.java/88}
+WARNING [07 de Março de 2017 - 22:50:36] [ BATCH ] impossivel abortar processo terminado.
+INFO [07 de Março de 2017 - 22:50:36] o processo sera encerrado.
+DEBUG [07 de Março de 2017 - 22:54:26] Arquivo Log inicializado com sucesso. {JRIaccess2.java/62}
+INFO [07 de Março de 2017 - 22:54:26] [ ARGS ][BATCH, log.txt, DEBUG, script.R, /home/mfernandes/jritest/]
+DEBUG [07 de Março de 2017 - 22:54:26] inicializando em modo BATCH. {JRIaccess2.java/60}
+INFO [07 de Março de 2017 - 22:54:26] [ BATCH ] nome do arquivo de script: script.R
+INFO [07 de Março de 2017 - 22:54:26] [ BATCH ] diretorio para o script: /home/mfernandes/jritest/
+DEBUG [07 de Março de 2017 - 22:54:26] starting process. {JRIaccess2.java/88}
+INFO [07 de Março de 2017 - 22:54:26] [ BATCH ] processo iniciado com o comando: [R, CMD, BATCH, script.R]
+DEBUG [07 de Março de 2017 - 22:54:31] [ BATCH ] arquivo temporario: /tmp/status502822256589372316.tmp
+INFO [07 de Março de 2017 - 22:54:31] [ BATCH ] obtendo status: ps -p 22582 -o %cpu,%mem,stat,time --no-headers
+DEBUG [07 de Março de 2017 - 22:54:31] [ BATCH ] aguardando por termino de processo de status.
+DEBUG [07 de Março de 2017 - 22:54:31] [ BATCH ] obtendo resultado da consulta do status.
+INFO [07 de Março de 2017 - 22:54:31] [ BATCH ] status obtido:
+[90.4, 0.6, R+, 00:00:04]
+fim do status obtido
+INFO [07 de Março de 2017 - 22:54:31] status requisitado, retorno:{"isAlive":true,"pid":22582"cpu":"90.4","memoria":"0.6","estado":"R+","tempo":"00:00:04"} {JRIaccess2.java/88}
+INFO [07 de Março de 2017 - 22:54:34] result requisitado.
+INFO [07 de Março de 2017 - 22:54:40] [ BATCH ] processo terminado sob comando do usuario com sucesso.
+INFO [07 de Março de 2017 - 22:54:40] stop requisitado: sucesso {JRIaccess2.java/88}
+INFO [07 de Março de 2017 - 22:54:44] result requisitado.
+WARNING [07 de Março de 2017 - 22:56:00] [ BATCH ] processo forcado a terminar.
+INFO [07 de Março de 2017 - 22:56:00] stop requisitado: sucesso {JRIaccess2.java/88}
+WARNING [07 de Março de 2017 - 22:56:06] [ BATCH ] processo forcado a terminar.
+INFO [07 de Março de 2017 - 22:56:06] o processo sera encerrado.
+DEBUG [07 de Março de 2017 - 23:00:16] Arquivo Log inicializado com sucesso. {JRIaccess2.java/62}
+INFO [07 de Março de 2017 - 23:00:16] [ ARGS ][BATCH, log.txt, DEBUG, script.R, /home/mfernandes/jritest/]
+DEBUG [07 de Março de 2017 - 23:00:16] inicializando em modo BATCH. {JRIaccess2.java/60}
+INFO [07 de Março de 2017 - 23:00:16] [ BATCH ] nome do arquivo de script: script.R
+INFO [07 de Março de 2017 - 23:00:16] [ BATCH ] diretorio para o script: /home/mfernandes/jritest/
+DEBUG [07 de Março de 2017 - 23:00:16] starting process. {JRIaccess2.java/88}
+INFO [07 de Março de 2017 - 23:00:16] [ BATCH ] processo iniciado com o comando: [R, CMD, BATCH, script.R]
+DEBUG [07 de Março de 2017 - 23:00:21] [ BATCH ] arquivo temporario: /tmp/status1139973672960339103.tmp
+INFO [07 de Março de 2017 - 23:00:21] [ BATCH ] obtendo status: ps -p 22733 -o %cpu,%mem,stat,time --no-headers
+DEBUG [07 de Março de 2017 - 23:00:21] [ BATCH ] aguardando por termino de processo de status.
+DEBUG [07 de Março de 2017 - 23:00:21] [ BATCH ] obtendo resultado da consulta do status.
+INFO [07 de Março de 2017 - 23:00:21] [ BATCH ] status obtido:
+[94.2, 0.6, R+, 00:00:03]
+fim do status obtido
+INFO [07 de Março de 2017 - 23:00:21] status requisitado, retorno:{"isAlive":true,"pid":22733"cpu":"94.2","memoria":"0.6","estado":"R+","tempo":"00:00:03"} {JRIaccess2.java/88}
+DEBUG [07 de Março de 2017 - 23:00:24] erros requisitado com opçao: 0 com: error
+INFO [07 de Março de 2017 - 23:00:24] erros requisitado.
+DEBUG [07 de Março de 2017 - 23:00:38] outputs requisitado com opçao: 0 com: output
+INFO [07 de Março de 2017 - 23:00:38] output requisitado.
+INFO [07 de Março de 2017 - 23:00:54] [ BATCH ] processo terminado sob comando do usuario com sucesso.
+INFO [07 de Março de 2017 - 23:00:54] stop requisitado: sucesso {JRIaccess2.java/88}
+WARNING [07 de Março de 2017 - 23:00:55] [ BATCH ] processo forcado a terminar.
+INFO [07 de Março de 2017 - 23:00:55] stop requisitado: sucesso {JRIaccess2.java/88}
+WARNING [07 de Março de 2017 - 23:00:59] [ BATCH ] processo forcado a terminar.
+INFO [07 de Março de 2017 - 23:00:59] stop requisitado: sucesso {JRIaccess2.java/88}
+WARNING [07 de Março de 2017 - 23:01:01] [ BATCH ] processo forcado a terminar.
+INFO [07 de Março de 2017 - 23:01:01] stop requisitado: sucesso {JRIaccess2.java/88}
+INFO [07 de Março de 2017 - 23:01:14] result requisitado.
+WARNING [07 de Março de 2017 - 23:03:19] [ BATCH ] processo forcado a terminar.
+INFO [07 de Março de 2017 - 23:03:19] o processo sera encerrado.
+DEBUG [07 de Março de 2017 - 23:07:18] Arquivo Log inicializado com sucesso. {JRIaccess2.java/62}
+INFO [07 de Março de 2017 - 23:07:18] [ ARGS ][BATCH, log.txt, DEBUG, script.R, /home/mfernandes/jritest/]
+DEBUG [07 de Março de 2017 - 23:07:18] inicializando em modo BATCH. {JRIaccess2.java/60}
+INFO [07 de Março de 2017 - 23:07:18] [ BATCH ] nome do arquivo de script: script.R
+INFO [07 de Março de 2017 - 23:07:18] [ BATCH ] diretorio para o script: /home/mfernandes/jritest/
+DEBUG [07 de Março de 2017 - 23:07:18] starting process. {JRIaccess2.java/88}
+INFO [07 de Março de 2017 - 23:07:18] [ BATCH ] processo iniciado com o comando: [R, CMD, BATCH, script.R]
+DEBUG [07 de Março de 2017 - 23:07:21] [ BATCH ] arquivo temporario: /tmp/status1647778710097320727.tmp
+INFO [07 de Março de 2017 - 23:07:21] [ BATCH ] obtendo status: ps -p 22921 -o %cpu,%mem,stat,time --no-headers
+DEBUG [07 de Março de 2017 - 23:07:21] [ BATCH ] aguardando por termino de processo de status.
+DEBUG [07 de Março de 2017 - 23:07:21] [ BATCH ] obtendo resultado da consulta do status.
+INFO [07 de Março de 2017 - 23:07:21] [ BATCH ] status obtido:
+[96.3, 0.6, R+, 00:00:02]
+fim do status obtido
+INFO [07 de Março de 2017 - 23:07:21] status requisitado, retorno:{"isAlive":true,"pid":22921"cpu":"96.3","memoria":"0.6","estado":"R+","tempo":"00:00:02"} {JRIaccess2.java/88}
+DEBUG [07 de Março de 2017 - 23:07:24] erros requisitado com opçao: 0 com: error
+INFO [07 de Março de 2017 - 23:07:24] erros requisitado.
+DEBUG [07 de Março de 2017 - 23:07:33] outputs requisitado com opçao: 0 com: output
+INFO [07 de Março de 2017 - 23:07:33] output requisitado.
+INFO [07 de Março de 2017 - 23:07:38] [ BATCH ] processo terminado sob comando do usuario com sucesso.
+INFO [07 de Março de 2017 - 23:07:38] o processo sera encerrado.

@@ -11,6 +11,7 @@ package jriacces2.log;
  */
 public enum Errors {
     ARGS_INVALIDO,
+    ARGS_INSUFICIENTE,
     R_VERSIOIN_ERROR,
     THREAD_TIMEOUT,
     TIMEOUT_USER_ITERATION,
