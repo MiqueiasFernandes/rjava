@@ -19,7 +19,7 @@ public class TXTLog implements ILog {
     public TXTLog(String fileName, LogType type) throws IOException {
         this.nivelDeLog = type != null ? type : LogType.LOG_DEBUG;
         if (fileName == null || fileName.isEmpty()) {
-            fileName = ".log";
+            fileName = "jriaccess.log";
         }
         fileWriter = new FileWriter(fileName, true);
     }
@@ -33,7 +33,7 @@ public class TXTLog implements ILog {
     public void printLog(LogType tipo, String texto) {
         try {
             String modo = null;
-            
+
             switch (tipo) {
                 case LOG_DEBUG: {
                     if (nivelDeLog == LogType.LOG_ERROR || nivelDeLog == LogType.LOG_WARNING || nivelDeLog == LogType.LOG_INFO) {
@@ -61,7 +61,7 @@ public class TXTLog implements ILog {
                     break;
                 }
             }
-            
+
             fileWriter.append(modo + " [" + formata.format(new java.util.Date()) + "] "
                     + texto + System.lineSeparator());
             fileWriter.flush();

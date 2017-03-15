@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jriacces2;
+package jriacces2.Processos;
 
+import jriacces2.Protocolo;
 import jriacces2.log.LogType;
 import jriacces2.strategy.BusyWriter;
 import jriacces2.strategy.ConsoleWriter;
@@ -13,6 +14,7 @@ import jriacces2.strategy.MessageWriter;
 import org.rosuda.JRI.RMainLoopCallbacks;
 import org.rosuda.JRI.Rengine;
 
+///vide http://rforge.net/org/doc/org/rosuda/JRI/RMainLoopCallbacks.html for details
 /**
  *
  * @author mfernandes
@@ -27,13 +29,17 @@ public class TextConsole implements RMainLoopCallbacks {
 
     @Override
     public void rWriteConsole(Rengine re, String text, int oType) {
-        protocolo.getLog().printLog(LogType.LOG_DEBUG, "escrevendo. {TectConsole.java/30}");
+        protocolo.getLog().printLog(LogType.LOG_DEBUG, "escrevendo "
+                + (oType == 0 ? "regular" : "error/warning")
+                + ". {TectConsole.java/30}");
         protocolo.escrever(new ConsoleWriter(oType, text));
     }
 
     @Override
     public void rBusy(Rengine re, int which) {
-        protocolo.getLog().printLog(LogType.LOG_DEBUG, "trabalhando. {TextConsole.java/36}");
+        protocolo.getLog().printLog(LogType.LOG_DEBUG, "console esta "
+                + (which == 0 ? "trabalhando" : "pronto")
+                + ". {TextConsole.java/36}");
         protocolo.escrever(new BusyWriter(which));
     }
 

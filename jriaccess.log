@@ -1,0 +1,165 @@
+INFO [12 de Março de 2017 - 00:12:28] [ ARGS ][LIVE, , INFO, --vanilla]
+INFO [12 de Março de 2017 - 00:12:28] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:12:28] [ RJAVA ] Creating Rengine (with arguments)
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] escreveu: [CONSOLE][0]
+
+INFO [12 de Março de 2017 - 00:12:28] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] escreveu: [CONSOLE][0]R version 3.3.2 (2016-10-31) -- "Sincere Pumpkin Patch"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+
+INFO [12 de Março de 2017 - 00:12:28] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] escreveu: [CONSOLE][0]R é um software livre e vem sem GARANTIA ALGUMA.
+Você pode redistribuí-lo sob certas circunstâncias.
+Digite 'license()' ou 'licence()' para detalhes de distribuição.
+
+
+INFO [12 de Março de 2017 - 00:12:28] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] escreveu: [CONSOLE][0]R é um projeto colaborativo com muitos contribuidores.
+Digite 'contributors()' para obter mais informações e
+'citation()' para saber como citar o R ou pacotes do R em publicações.
+
+
+INFO [12 de Março de 2017 - 00:12:28] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] escreveu: [CONSOLE][0]Digite 'demo()' para demonstrações, 'help()' para o sistema on-line de ajuda,
+ou 'help.start()' para abrir o sistema de ajuda em HTML no seu navegador.
+Digite 'q()' para sair do R.
+
+
+INFO [12 de Março de 2017 - 00:12:28] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:12:28] [ RJAVA ] Rengine created, waiting for R
+INFO [12 de Março de 2017 - 00:12:28] [ RJAVA ] Now the console is yours ... have fun
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] escreveu: [BUSY]default
+INFO [12 de Março de 2017 - 00:12:28] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:12:28] [ Escrevendo ] escreveu: [PROMPT]> 
+INFO [12 de Março de 2017 - 00:12:28] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:12:28] [ Lendo ] o JRI esta Lendo...
+WARNING [12 de Março de 2017 - 00:12:29] [ RJAVA ] waiting user iteration. (1)
+WARNING [12 de Março de 2017 - 00:12:30] [ RJAVA ] waiting user iteration. (2)
+WARNING [12 de Março de 2017 - 00:12:31] [ RJAVA ] waiting user iteration. (3)
+WARNING [12 de Março de 2017 - 00:12:32] [ RJAVA ] waiting user iteration. (4)
+WARNING [12 de Março de 2017 - 00:12:33] [ RJAVA ] waiting user iteration. (5)
+WARNING [12 de Março de 2017 - 00:12:34] [ RJAVA ] waiting user iteration. (6)
+WARNING [12 de Março de 2017 - 00:12:35] [ RJAVA ] waiting user iteration. (7)
+WARNING [12 de Março de 2017 - 00:12:36] [ RJAVA ] waiting user iteration. (8)
+WARNING [12 de Março de 2017 - 00:12:37] [ RJAVA ] waiting user iteration. (9)
+WARNING [12 de Março de 2017 - 00:12:38] [ RJAVA ] waiting user iteration. (10)
+ERROR [12 de Março de 2017 - 00:12:38] [ RJAVA ] timeout para interação do usuário.
+INFO [12 de Março de 2017 - 00:15:52] [ ARGS ][LIVE, , INFO, --vanilla]
+INFO [12 de Março de 2017 - 00:15:52] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:15:52] [ RJAVA ] Creating Rengine (with arguments)
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] escreveu: [CONSOLE][0]
+
+INFO [12 de Março de 2017 - 00:15:52] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] escreveu: [CONSOLE][0]R version 3.3.2 (2016-10-31) -- "Sincere Pumpkin Patch"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+
+INFO [12 de Março de 2017 - 00:15:52] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] escreveu: [CONSOLE][0]R é um software livre e vem sem GARANTIA ALGUMA.
+Você pode redistribuí-lo sob certas circunstâncias.
+Digite 'license()' ou 'licence()' para detalhes de distribuição.
+
+
+INFO [12 de Março de 2017 - 00:15:52] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] escreveu: [CONSOLE][0]R é um projeto colaborativo com muitos contribuidores.
+Digite 'contributors()' para obter mais informações e
+'citation()' para saber como citar o R ou pacotes do R em publicações.
+
+
+INFO [12 de Março de 2017 - 00:15:52] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] escreveu: [CONSOLE][0]Digite 'demo()' para demonstrações, 'help()' para o sistema on-line de ajuda,
+ou 'help.start()' para abrir o sistema de ajuda em HTML no seu navegador.
+Digite 'q()' para sair do R.
+
+
+INFO [12 de Março de 2017 - 00:15:52] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:15:52] [ RJAVA ] Rengine created, waiting for R
+INFO [12 de Março de 2017 - 00:15:52] [ RJAVA ] Now the console is yours ... have fun
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] escreveu: [BUSY]default
+INFO [12 de Março de 2017 - 00:15:52] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:15:52] [ Escrevendo ] escreveu: [PROMPT]> 
+INFO [12 de Março de 2017 - 00:15:52] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:15:52] [ Lendo ] o JRI esta Lendo...
+WARNING [12 de Março de 2017 - 00:15:53] [ RJAVA ] waiting user iteration. (1)
+WARNING [12 de Março de 2017 - 00:15:54] [ RJAVA ] waiting user iteration. (2)
+WARNING [12 de Março de 2017 - 00:15:55] [ RJAVA ] waiting user iteration. (3)
+WARNING [12 de Março de 2017 - 00:15:56] [ RJAVA ] waiting user iteration. (4)
+WARNING [12 de Março de 2017 - 00:15:57] [ RJAVA ] waiting user iteration. (5)
+WARNING [12 de Março de 2017 - 00:15:58] [ RJAVA ] waiting user iteration. (6)
+WARNING [12 de Março de 2017 - 00:15:59] [ RJAVA ] waiting user iteration. (7)
+WARNING [12 de Março de 2017 - 00:16:00] [ RJAVA ] waiting user iteration. (8)
+WARNING [12 de Março de 2017 - 00:16:01] [ RJAVA ] waiting user iteration. (9)
+WARNING [12 de Março de 2017 - 00:16:02] [ RJAVA ] waiting user iteration. (10)
+ERROR [12 de Março de 2017 - 00:16:02] [ RJAVA ] timeout para interação do usuário.
+INFO [12 de Março de 2017 - 00:16:31] [ ARGS ][LIVE, , INFO, --vanilla]
+INFO [12 de Março de 2017 - 00:16:31] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:16:31] [ RJAVA ] Creating Rengine (with arguments)
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] escreveu: [CONSOLE][0]
+
+INFO [12 de Março de 2017 - 00:16:31] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] escreveu: [CONSOLE][0]R version 3.3.2 (2016-10-31) -- "Sincere Pumpkin Patch"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+
+INFO [12 de Março de 2017 - 00:16:31] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] escreveu: [CONSOLE][0]R é um software livre e vem sem GARANTIA ALGUMA.
+Você pode redistribuí-lo sob certas circunstâncias.
+Digite 'license()' ou 'licence()' para detalhes de distribuição.
+
+
+INFO [12 de Março de 2017 - 00:16:31] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] escreveu: [CONSOLE][0]R é um projeto colaborativo com muitos contribuidores.
+Digite 'contributors()' para obter mais informações e
+'citation()' para saber como citar o R ou pacotes do R em publicações.
+
+
+INFO [12 de Março de 2017 - 00:16:31] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] escreveu: [CONSOLE][0]Digite 'demo()' para demonstrações, 'help()' para o sistema on-line de ajuda,
+ou 'help.start()' para abrir o sistema de ajuda em HTML no seu navegador.
+Digite 'q()' para sair do R.
+
+
+INFO [12 de Março de 2017 - 00:16:31] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:16:31] [ RJAVA ] Rengine created, waiting for R
+INFO [12 de Março de 2017 - 00:16:31] [ RJAVA ] Now the console is yours ... have fun
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] escreveu: [BUSY]default
+INFO [12 de Março de 2017 - 00:16:31] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] o JRI esta Escrevendo...
+INFO [12 de Março de 2017 - 00:16:31] [ Escrevendo ] escreveu: [PROMPT]> 
+INFO [12 de Março de 2017 - 00:16:31] [ Aberto ] o JRI esta Aberto...
+INFO [12 de Março de 2017 - 00:16:31] [ Lendo ] o JRI esta Lendo...
+WARNING [12 de Março de 2017 - 00:16:32] [ RJAVA ] waiting user iteration. (1)
+WARNING [12 de Março de 2017 - 00:16:33] [ RJAVA ] waiting user iteration. (2)
+WARNING [12 de Março de 2017 - 00:16:34] [ RJAVA ] waiting user iteration. (3)
+WARNING [12 de Março de 2017 - 00:16:35] [ RJAVA ] waiting user iteration. (4)
+WARNING [12 de Março de 2017 - 00:16:36] [ RJAVA ] waiting user iteration. (5)
+WARNING [12 de Março de 2017 - 00:16:37] [ RJAVA ] waiting user iteration. (6)
+WARNING [12 de Março de 2017 - 00:16:38] [ RJAVA ] waiting user iteration. (7)
+WARNING [12 de Março de 2017 - 00:16:39] [ RJAVA ] waiting user iteration. (8)
+WARNING [12 de Março de 2017 - 00:16:40] [ RJAVA ] waiting user iteration. (9)
+WARNING [12 de Março de 2017 - 00:16:41] [ RJAVA ] waiting user iteration. (10)
+ERROR [12 de Março de 2017 - 00:16:41] [ RJAVA ] timeout para interação do usuário.

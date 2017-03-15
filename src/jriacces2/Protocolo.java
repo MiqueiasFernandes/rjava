@@ -5,6 +5,9 @@
  */
 package jriacces2;
 
+import jriacces2.Processos.RJava;
+import jriacces2.Processos.TextConsole;
+import java.util.Base64;
 import jriacces2.log.ILog;
 import jriacces2.log.LogType;
 import jriacces2.state.AbstractState;
@@ -21,6 +24,7 @@ public class Protocolo {
     private RJava rJava;
     private final TextConsole console;
     private final ILog log;
+    private int lineNull = 0;
 
     public Protocolo(String[] args, ILog log) {
         this.log = log;
@@ -42,10 +46,24 @@ public class Protocolo {
         log.printLog(LogType.LOG_DEBUG, "lendo texto. {Protocolo.java/42}");
         String ret = estado.ler(prompt);
         rJava.inUse = true;
+
+        if ((ret == null || ret.isEmpty()) && (lineNull++ > 1000)) {
+            log.printLog(LogType.LOG_ERROR, "limite de linhas nulas excedido: " + lineNull);
+            fechar();
+        }
+
+        lineNull = 0;
+
+        try {
+            ret = new String(Base64.getDecoder().decode(ret));
+        } catch (Exception ex) {
+            getLog().printLog(LogType.LOG_ERROR, "indecodificavel: " + ret + " error: " + ex);
+        }
+
         return ret;
     }
 
-    void escrever(IWriter writer) {
+    public void escrever(IWriter writer) {
         log.printLog(LogType.LOG_DEBUG, "escrevendo texto. {Protocolo.java/49}");
         estado.escrever(writer);
     }
@@ -62,6 +80,10 @@ public class Protocolo {
 
     public ILog getLog() {
         return log;
+    }
+
+    public RJava getrJava() {
+        return rJava;
     }
 
 }

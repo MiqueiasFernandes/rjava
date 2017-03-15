@@ -5,6 +5,7 @@
  */
 package jriacces2;
 
+import jriacces2.Processos.Batch;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -26,8 +27,8 @@ public class JRIacces2 {
 
         //test proposits
         if (args == null || args.length < 1) {
-            // args = new String[]{"LIVE", "", "INFO", "--vanilla"};
-            args = new String[]{"BATCH", "log.txt", "DEBUG", "script.R", "/home/mfernandes/jritest/"};
+            args = new String[]{"LIVE", "", "INFO", "--vanilla"};
+            //  args = new String[]{"BATCH", "log.txt", "DEBUG", "script.R", "/home/mfernandes/jritest/"};
         }
 
         if (args.length < 1 || args[0] == null || args[0].isEmpty()) {
@@ -163,6 +164,12 @@ public class JRIacces2 {
                     System.exit(Errors.ARGS_INVALIDO.ordinal());
             }
         }
+    }
+
+    public static long getPID() {
+        String processName
+                = java.lang.management.ManagementFactory.getRuntimeMXBean().getName();
+        return Long.parseLong(processName.split("@")[0]);
     }
 
 }

@@ -5,22 +5,15 @@
  */
 package jriacces2.strategy;
 
-public class BusyWriter implements IWriter {
+public class StatusWriter extends AbstractWriter {
 
-    private final int numero;
-
-    public BusyWriter(int numero) {
-        this.numero = numero;
+    public StatusWriter(String text) {
+        super(text);
     }
 
     @Override
     public String getTipo() {
-        return "BUSY";
-    }
-
-    @Override
-    public String getText() {
-        return (numero == 0 ? "default" : "wait");
+        return "status";
     }
 
 }

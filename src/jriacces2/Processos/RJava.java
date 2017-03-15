@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jriacces2;
+package jriacces2.Processos;
 
+import jriacces2.JRIacces2;
 import jriacces2.log.Errors;
 import jriacces2.log.ILog;
 import jriacces2.log.LogType;
@@ -19,8 +20,9 @@ public class RJava {
     public boolean inUse = false;
     private final TextConsole console;
     private final ILog log;
-    private final int timeout_iteration = 10;
+    private final int timeout_iteration = 100;
     private Rengine re;
+    private String pid = null;
 
     public RJava(TextConsole console, ILog log) {
         this.console = console;
@@ -45,6 +47,9 @@ public class RJava {
             logError("Cannot load R");
             return;
         }
+
+        System.out.println("pid:" + JRIacces2.getPID() + ":"
+                + (pid = String.valueOf(re.eval("pid = Sys.getpid()").asInt())));
 
         if (true) {
             logInfo("Now the console is yours ... have fun");
@@ -94,6 +99,10 @@ public class RJava {
 
     public Rengine getRengine() {
         return re;
+    }
+
+    public String getPid() {
+        return pid;
     }
 
 }

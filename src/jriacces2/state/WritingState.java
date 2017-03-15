@@ -5,6 +5,7 @@
  */
 package jriacces2.state;
 
+import java.util.Base64;
 import jriacces2.Protocolo;
 import jriacces2.log.ILog;
 import jriacces2.strategy.IWriter;
@@ -25,7 +26,7 @@ public class WritingState extends AbstractState {
 
     void writeLine(IWriter writer) {
         String texto = "[" + writer.getTipo() + "]" + writer.getText();
-        System.out.println(texto);
+        System.out.println(Base64.getEncoder().encodeToString(texto.getBytes()));
         logInfo("escreveu: " + texto);
         escrito();
     }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jriacces2;
+package jriacces2.Processos;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Arrays;
 import java.util.Scanner;
+import jriacces2.JRIacces2;
 import jriacces2.log.ILog;
 import jriacces2.log.LogType;
 
@@ -31,7 +32,7 @@ public class Batch {
     private File output, error;
     private String pid = null;
 
-    Batch(ILog log, String fileName, String diretorio) {
+    public Batch(ILog log, String fileName, String diretorio) {
         this.log = log;
         this.fileName = fileName;
         this.diretorio = diretorio;
@@ -54,6 +55,18 @@ public class Batch {
             process = processBuilder.start();
             logInfo("processo iniciado com o comando: "
                     + Arrays.toString(new String[]{R_BATCH_CMD1, R_BATCH_CMD2, R_BATCH_CMD3, fileName}));
+
+            new Thread(() -> {
+                while (pid == null && "{\"error\":\"pid nao encontrado.\"}".equals(getStatus())) {
+                    try {
+                        Thread.sleep(500);
+                    } catch (InterruptedException ex) {
+                        logError("impossivel aguardar por thread para obter PID. ex: " + ex);
+                    }
+                }
+                System.out.println("pid:" + JRIacces2.getPID() + ":" + pid);
+            }).start();
+
         } catch (IOException ex) {
             logError("imporssivel iniciar o processo: " + ex);
         }
@@ -108,7 +121,7 @@ public class Batch {
                 logInfo("status obtido:\n" + Arrays.toString(resultado) + "\nfim do status obtido");
                 return "{"
                         + "\"isAlive\":true,"
-                        + "\"pid\":" + pid
+                        + "\"pid\":" + pid + ","
                         + "\"cpu\":\"" + resultado[0] + "\","
                         + "\"memoria\":\"" + resultado[1] + "\","
                         + "\"estado\":\"" + resultado[2] + "\","
